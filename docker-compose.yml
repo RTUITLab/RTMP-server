@@ -2,15 +2,4 @@ version: '3.8'
 
 services:
   rtmp-server:
-    build: ./
-    ports:
-      - 1935:1935
-    volumes:
-      - ./records:/my_records
-    environment:
-      CS_record: all
-      CS_record_path: /my_records
-      CS_record_unique: "on"
-
-
-
+    image: rtuitlab/rtmp-server
