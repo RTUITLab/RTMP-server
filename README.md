@@ -1,11 +1,11 @@
 # RTMP-server
 > RTMP server with environment configuration
 
-1. Install Docker
+1. Install [Docker](https://www.docker.com/products/docker-desktop)
 2. Run `docker pull rtuitlab/rtmp-server` in command line
 3. Create file with environmental variables
 4. Run `docker run -p 1935:1935 --env-file <route_to_env_file> --rm -it rtuitlab/rtmp-server` in command line
-
+5. Now you can send and receive stream on URL `rtmp://<your_pc_ip>/live/<stream_key>`
 ## Configuration of environmental variables
 
 Available variables:
